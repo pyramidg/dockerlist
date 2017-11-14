@@ -1,4 +1,4 @@
-
+version: '1.8'
 # Defining the services/containers to run
 services:
   angular: # name of first service 
