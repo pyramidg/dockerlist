@@ -1,4 +1,3 @@
-version: '1.8' # specifing docker-compose version
 
 # Defining the services/containers to run
 services:
