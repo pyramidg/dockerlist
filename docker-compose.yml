@@ -1,7 +1,7 @@
 
 # Defining the services/containers to run
 services:
-  agular: # name of first service 
+  angular: # name of first service 
     build: client # specify the directory of the Dockerfile
     ports:
     - "4200:4200" # specify port mapping of angular client src
