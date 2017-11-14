@@ -1,0 +1,18 @@
+version: '3.0' # specifing docker-compose version
+
+# Defining the services/containers to run
+services:
+  agular: # name of first service 
+    build: client # specify the directory of the Dockerfile
+    ports:
+    - "4200:4200" # specify port mapping of angular client src
+
+  express: # name of the second service
+    build: contactlist # specify the directory of Dockerfile
+    ports:
+    - "3000:3000" #specify ports mapping of express server
+    links:
+    - database: # name of the third service
+      image: mongo # specify image to build container from
+      ports:
+      - "27017:27017" # specify port forwarding
